@@ -14,7 +14,23 @@ export const sendMessageToGemini = async (
     });
 
     if (!response.ok) {
-      throw new Error('Failed to fetch response from backend');
+      let details = '';
+      try {
+        const maybeJson = await response.json();
+        details = maybeJson?.error || maybeJson?.details || JSON.stringify(maybeJson);
+      } catch {
+        try {
+          details = await response.text();
+        } catch {
+          details = '';
+        }
+      }
+
+      throw new Error(
+        details
+          ? `Backend error (${response.status}): ${details}`
+          : `Backend error (${response.status})`
+      );
     }
 
     const data = await response.json();

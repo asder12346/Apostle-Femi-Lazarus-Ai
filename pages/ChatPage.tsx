@@ -54,7 +54,10 @@ const ChatPage: React.FC = () => {
                 isLoading: false,
             }));
         } catch (err) {
-            const errorText = "I encountered an issue accessing the ministry archive. Please try rephrasing your question or checking your connection.";
+            const errorText =
+                err instanceof Error && err.message
+                    ? err.message
+                    : "I encountered an issue accessing the ministry archive. Please try rephrasing your question or checking your connection.";
 
             setChatState(prev => ({
                 ...prev,
