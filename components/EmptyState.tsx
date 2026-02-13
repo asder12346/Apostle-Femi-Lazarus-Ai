@@ -7,10 +7,10 @@ interface EmptyStateProps {
 
 const EmptyState: React.FC<EmptyStateProps> = ({ onSuggestedClick }) => {
   const suggestions = [
-    { title: "Kingdom Laws", text: "Explain the biblical law of service and honor." },
-    { title: "Personal Growth", text: "How do I discover my God-given purpose?" },
-    { title: "Prayer Life", text: "Apostle Selman's teaching on effective, results-driven prayer." },
-    { title: "Divine Favor", text: "Understanding the mystery of the favor of God." }
+    { title: "Spirit Life", text: "Explain the concept of walking in the Spirit according to Apostle Femi Lazarus." },
+    { title: "Divine Purpose", text: "How do I discover and align with my spiritual assignment?" },
+    { title: "Strategic Living", text: "What are the keys to strategic spiritual and personal growth?" },
+    { title: "The Prophetic", text: "Understanding the role of the prophetic in a believer's life." }
   ];
 
   return (
@@ -22,10 +22,10 @@ const EmptyState: React.FC<EmptyStateProps> = ({ onSuggestedClick }) => {
       </div>
 
       <h2 className="text-3xl font-black text-[var(--text-primary)] mb-4 tracking-tight uppercase">
-        Joshua Selman AI
+        Femi Lazarus AI
       </h2>
       <p className="text-[var(--text-secondary)] mb-10 text-lg leading-relaxed max-w-lg">
-        Deepen your walk with God through refined spiritual insights and verified sermon knowledge.
+        Explore refined spiritual insights and verified sermon knowledge from Apostle Femi Lazarus.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">

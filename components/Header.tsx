@@ -7,11 +7,11 @@ const Header: React.FC = () => {
       <div className="max-w-4xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-transparent flex items-center justify-center shadow-lg shadow-black/10 ring-1 ring-[var(--divider)] overflow-hidden">
-            <img src="/logo.png" alt="Apostle Joshua Selman AI" className="w-full h-full object-cover" />
+            <img src="/download.jpeg" alt="Apostle Femi Lazarus AI" className="w-full h-full object-cover" />
           </div>
           <div>
             <h1 className="text-lg font-bold text-[var(--text-primary)] leading-tight">
-              Apostle Joshua Selman AI
+              Apostle Femi Lazarus AI
             </h1>
             <p className="text-[10px] font-bold text-[var(--text-secondary)] uppercase tracking-widest opacity-90">
               Spiritual Wisdom
